@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace MusicViewer
 {
-	internal partial class mainForm : Form
+	internal partial class MainForm : Form
 	{
 		private IEnumerable<Album> albums;
 		private IEnumerable<Artist> artists;
@@ -14,7 +14,7 @@ namespace MusicViewer
 		private DateTime toDate;
 		private IEnumerable<Track> tracks;
 
-		public mainForm()
+		public MainForm()
 		{
 			InitializeComponent();
 		}
