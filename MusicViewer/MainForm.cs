@@ -86,7 +86,7 @@ namespace MusicViewer
 									break;
 								}
 							}
-							releasedTextBox.Text = track.DateReleased.ToString();
+							releasedTextBox.Text = DateTime.Parse(track.DateReleased).ToString("d MMMM yyyy");
 							lengthTextBox.Text = track.Length.ToString();
 							List<string> sortedGenres = new List<string>();
 							foreach (var genre in genres)
@@ -102,6 +102,7 @@ namespace MusicViewer
 							{
 								genresTextBox.Text += $"{genre}, ";
 							}
+							genresTextBox.Text = genresTextBox.Text.Remove(genresTextBox.Text.Length - 2, 2);
 							break;
 						}
 					}

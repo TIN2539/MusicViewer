@@ -58,7 +58,7 @@
 			// 
 			// comboBox
 			// 
-			this.comboBox.FormattingEnabled = true;
+			this.comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox.Location = new System.Drawing.Point(93, 14);
 			this.comboBox.Name = "comboBox";
 			this.comboBox.Size = new System.Drawing.Size(417, 21);
@@ -200,7 +200,7 @@
 			// 
 			this.openFileDialog.FileName = "openFileDialog1";
 			// 
-			// mainForm
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +222,7 @@
 			this.Controls.Add(this.loadButton);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "mainForm";
+			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "MusicViewer";
 			this.ResumeLayout(false);
